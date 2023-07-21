@@ -19,7 +19,7 @@ JOBS = [
     'id' : 3,
     'title' : 'Videographer',
     'location' : 'Geneve, Switzerland',
-    'salary' : 'USD. 5000'
+    'salary' : 'USD. 10000'
   },
   {
     'id' : 4,
