@@ -10,16 +10,23 @@
         height: 360px;
         object-fit: cover;
         width: 100%;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://chaktek-career-site.agure60.repl.co/static/banner.jpg"/>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-      <img class="img-fluid" id="banner" src="https://chaktek-career-site.agure60.repl.co/static/banner.jpg" />
   
       <h2 class="text-center mt-2 mb-4">About ChakTek</h2>
+      <div class="row" style="margin-bottom: 16px;">
+        <div class="col-md-6">
       <p class="lead">Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
+          </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="https://chaktek-career-site.agure60.repl.co/static/people.jpg" style="height: 320px; border-radius: 4px;">
+      </div>
       <h2 class="text-center mt-2 mb-4">Available Work</h2>
       <div>
         {% for job in jobs %}
@@ -29,8 +36,8 @@
 
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Chaktek</p>
       </div
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
